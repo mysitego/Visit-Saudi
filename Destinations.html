@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saudi Winter Destinations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+background-image: url(images/alaula.jpg);
+background-size: cover;
+
+}
+
+header {
+    background-color: rgb(120, 36, 217);
+    text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color:  rgba(120, 36, 217, 0.283);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.destination {
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+h2 ,p {
+    background-color: thistle;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    main {
+
+  display: grid;
+  grid-template-columns: 1fr ;
+}
+}
+/* Add additional styling as needed */
+</style>
+<body>
+  <header>
+    <h1>Saudi Winter Destinations</h1>
+  </header>
+
+  <main>
+    <section>
+      <div class="destination">
+        <img src="images/riyadh.jpg" alt="Riyadh">
+        <h2>Riyadh</h2>
+        <p>Riyadh, the capital and largest city of Saudi Arabia, offers a diverse range of winter activities and attractions.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="destination">
+        <img src="images/jeddah.jpg" alt="Jeddah">
+        <h2>Jeddah</h2>
+        <p>Jeddah is a major port city and a gateway to the holy cities of Mecca and Medina.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="destination">
+        <img src="images/daraaya.jpg" alt="Eastern Province">
+        <h2>Eastern Province</h2>
+        <p>The Eastern Province is known for its beautiful beaches, picturesque islands, and rich history.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="destination">
+        <img src="images/alaula.jpg" alt="Al Ula">
+        <h2>Al Ula</h2>
+        <p>Al Ula is a historic city in northwestern Saudi Arabia, famous for its rock formations and ancient archaeological sites.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="destination">
+        <img src="images/sharqia.jpg" alt="Diriyah">
+        <h2>Diriyah</h2>
+        <p>Diriyah is a UNESCO World Heritage site located near Riyadh, showcasing the rich cultural heritage of Saudi Arabia.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Saudi Winter Destinations. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

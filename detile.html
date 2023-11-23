@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Styles for the image slider */
+.slider {
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  position: relative;
+
+}
+
+.slider img {
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+/* Styles for the content section */
+.content-section {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  padding: 10px;
+}
+
+.content-left,
+.content-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.content-left img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.content-right {
+  background-color: lightblue;
+  padding: 20px;
+
+}
+
+.content-right h2 {
+  text-align: left;
+}
+
+.content-right p {
+  margin: 20px;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .content-left img {
+    height: 100%;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container" style="padding-left: 20px; padding-right: 20px;">
+      <a class="logo" href="#">VISIT SAUDI </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="Tours.html">Tours</a></li>
+          <li><a href="formconnect.html">Contact us</a></li>
+          <li><a href="#footer"> More information </a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </div>
+</header>
+  <div class="slider">
+    <img src="images/saleh_cities.jpg" alt="Image 1">
+  </div>
+
+  <section class="content-section">
+    <div class="content-left">
+      <img src="images/alaula.jpg" alt="Image 4">
+      <img src="images/Taryf.jpg" alt="Image 5">
+    </div>
+    <div class="content-right">
+      <div class="box">
+        <h2>Tourist Area in Asir</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum dolor eu dui consectetur ullamcorper.
+          Aliquam erat volutpat. Morbi sagittis mi eget pretium fringilla. Donec euismod metus ac nisl convallis, vel
+          fringilla nunc lacinia. Mauris vel vehicula nisi. Sed sed arcu ac mi auctor aliquet. Quisque finibus metus non
+          tellus ultrices, ut dictum velit fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Aliquam tincidunt facilisis nisl, at congue erat finibus ac. Vivamus venenatis ligula
+          et ligula varius, ac lobortis felis efficitur. Maecenas at arcu non turpis posuere lacinia eu eu urna. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst.
+        </p>
+      </div>
+      <div class="box">
+        <h2>Tourist Area in Asir</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum dolor eu dui consectetur ullamcorper.
+          Aliquam erat volutpat. Morbi sagittis mi eget pretium fringilla. Donec euismod metus ac nisl convallis, vel
+          fringilla nunc lacinia. Mauris vel vehicula nisi. Sed sed arcu ac mi auctor aliquet. Quisque finibus metus non
+          tellus ultrices, ut dictum velit fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Aliquam tincidunt facilisis nisl, at congue erat finibus ac. Vivamus venenatis ligula
+          et ligula varius, ac lobortis felis efficitur. Maecenas at arcu non turpis posuere lacinia eu eu urna. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
