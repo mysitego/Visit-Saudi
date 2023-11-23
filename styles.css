@@ -342,7 +342,7 @@ color: gold;
   position: relative;
   flex: 0 0 100%;
   background-color: rgba(226, 136, 226, 0.637);
-  border-radius : 20px;
+  border-radius : 15px;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -350,6 +350,7 @@ color: gold;
 
 iframe{
   height: 600px;
+  border-radius: 10px;
 }
 
 
