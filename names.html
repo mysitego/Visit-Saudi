@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Names Page</title>
+  <style>
+    .section {
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+ 
+  
+    <ul id="nameList">
+      <li>Raghad Abdulrahman</li>
+      <li>Shrog Al-balawi</li>
+      <li>Maymonah Aljammaz</li>
+      <li>Afnan Al-anazi</li>
+    </ul>
+ 
+
+  <script>
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    function updatePage() {
+      const nameList = document.getElementById('nameList');
+      const names = Array.from(nameList.children);
+
+      shuffle(names);
+
+      nameList.innerHTML = ''; // Clear the existing list
+
+      for (let i = 0; i < names.length; i++) {
+        nameList.appendChild(names[i]);
+      }
+
+      // Store the updated order in local storage
+      localStorage.setItem('nameOrder', nameList.innerHTML);
+    }
+
+    // Check if there is a stored order in local storage
+    const storedOrder = localStorage.getItem('nameOrder');
+    if (storedOrder) {
+      const nameList = document.getElementById('nameList');
+      nameList.innerHTML = storedOrder;
+    }
+
+    // Event listener for page load
+    window.addEventListener('load', updatePage);
+  </script>
+</body>
+</html>
